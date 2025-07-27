@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="./layout.css">
+    <link rel="stylesheet" href="./style.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- end -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row justify-center items-center h-full">
+            <div class="player">
+                <audio src="" id="audio"></audio>
+                <div class="music-content">
+                    <!-- <img src="./assets/images/music-1.jpg" alt="music" class="image">
+                    <marquee direction="right" class="music-name">Back to black & Gel ey seher Dizzi Mashup</marquee>
+                    <p class="artist"> Polad Bülbüloğlu x Amy Winehouse</p>
+                     -->
+                </div>
+                <div class="line">
+                    <input type="range" value="0" class="range"  >
+                    <p class="time">00:00</p>
+                </div>
+                <div class="control-icons">
+                    <i class="fa-solid fa-backward icons" id="backward"></i>
+                    <i class="fa-solid fa-play icons " id="play" ></i>
+                    <i class="fa-solid fa-pause icons none" id="pause"></i>
+                    <i class="fa-solid fa-forward icons" id="forward"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./data.js"></script>
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>
