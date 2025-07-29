@@ -85,3 +85,18 @@ input[type="range"]::-webkit-slider-thumb {
 .none{
     display: none !important;
 }
+
+.album{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.album-name{
+    margin-top: 10px;
+    font-size: 19px;
+    color: rgb(103, 103, 103);
+}
+.album-img{
+    border-radius: 14px;
+    width: 100%;
+}

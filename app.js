@@ -7,6 +7,8 @@ const forwardBtn = document.querySelector("#forward");
 const backwardBtn = document.querySelector("#backward");
 const range = document.querySelector(".range");
 const time = document.querySelector(".time");
+const album = document.querySelector(".album")
+const image = document.querySelector(".album-img")
 let index = 0;
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -93,3 +95,22 @@ audio.addEventListener("timeupdate", () => {
   let sn = Math.trunc(audio.currentTime % 60);
   time.innerHTML = `${mn >= 10 ? mn : "0" + mn}:${sn >= 10 ? sn : "0" + sn} `;
 });
+
+window.playAlbum = function(i){
+  index = i;
+  addUi(index);
+  audio.play();
+    playBtn.classList.add("none");
+  stopBtn.classList.remove("none");
+}
+
+musicList.forEach((music,index)=>{
+  album.innerHTML += `
+  <div class="col-lg-3 text-center">
+     <img src="./assets/images/${music.imagePath}" alt="album" class="album-img" onclick="playAlbum(${index})">
+    <p class="album-name">${music.musicName}</p>
+   </div>
+  `
+})
+
+

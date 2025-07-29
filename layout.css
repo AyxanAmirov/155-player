@@ -53,6 +53,10 @@
     padding-block: 10px;
 }
 
+.pb-30 {
+    padding-bottom: 30px;
+}
+
 .pi-20 {
     padding-inline: 20px;
 }
@@ -63,6 +67,9 @@
 
 .mt-100 {
     margin-top: 100px;
+}
+.mt-10 {
+    margin-top: 50px;
 }
 
 .bg-white {
